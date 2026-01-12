@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154536723}
   - component: {fileID: 1154536722}
+  - component: {fileID: 1154536724}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -414,7 +415,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1154536723
 Transform:
@@ -431,6 +432,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154536724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154536721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b741ec4d86ccd344ca6e1d002e58dd77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NewAssembly::GMPR2512.Lesson01.Square
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
