@@ -4,12 +4,12 @@ namespace Lesson04
 {
     public class DeathZone : MonoBehaviour
     {
-        public int _year = 1000;
+        [SerializeField] private int _year = 1000;
         void Awake()
         {
             
         }
-        
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         
         void Start()
