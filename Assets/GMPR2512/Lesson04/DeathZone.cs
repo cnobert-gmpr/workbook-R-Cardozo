@@ -4,11 +4,13 @@ namespace Lesson04
 {
     public class DeathZone : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        public int _year = 1000;
         void Awake()
         {
             
         }
+        
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
         
         void Start()
         {
