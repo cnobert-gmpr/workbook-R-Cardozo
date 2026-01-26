@@ -68,6 +68,7 @@
   <Project Path="Unity.2D.Aseprite.Common.csproj" />
   <Project Path="Unity.RenderPipeline.Universal.ShaderLibrary.csproj" />
   <Project Path="Lesson04.csproj" />
+  <Project Path="GMPR2512.Lesson05.csproj" />
   <Project Path="Unity.InputSystem.DocCodeSamples.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Shaders.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.csproj" />
@@ -77,7 +78,7 @@
   <Project Path="Unity.RenderPipelines.Core.Editor.Shared.csproj" />
   <Project Path="Unity.VisualScripting.DocCodeExamples.csproj" />
   <Project Path="Unity.PlasticSCM.Editor.Entities.csproj" />
-  <Project Path="NewAssembly.csproj" />
+  <Project Path="GMPR2512.Lesson01.csproj" />
   <Project Path="Unity.Rendering.LightTransport.Editor.csproj" />
   <Project Path="Unity.Collections.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Config.Runtime.csproj" />

@@ -11,9 +11,8 @@ namespace GMPR2512
         void OnDrawGizmos()
         {
             Gizmos.color = _gizmoColour;
-            
+
             Gizmos.DrawSphere(transform.position, _radius);
         }
     }
-
 }
