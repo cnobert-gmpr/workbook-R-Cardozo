@@ -17,6 +17,9 @@ namespace GMPR2512.Lesson05
         private IEnumerator RespawnBall(GameObject ball)
         {
             yield return new WaitForSeconds(2);
+            Rigidbody2D BallRB = ball.GetComponent<Rigidbody2D>();
+            BallRB.linearVelocity = Vector2.zero;
+            BallRB.angularVelocity = 0;
 
             ball.transform.position = _spawnPoint.position;
         }
