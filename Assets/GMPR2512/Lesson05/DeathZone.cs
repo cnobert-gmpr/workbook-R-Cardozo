@@ -15,7 +15,11 @@ namespace GMPR2512.Lesson05
 
         private IEnumerator RespawnBall(GameObject ball)
         {
-            
+            yield return new WaitForSeconds(2);
+
+            Debug.Log("It's been 2 seconds since the ball left gameplay");
+
+            Destroy(ball);
         }
     }
 }
