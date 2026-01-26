@@ -4,16 +4,12 @@ namespace GMPR2512.Lesson05
 {
     public class DeathZone : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        void OnTriggerEnter2D(Collider2D collider)
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            if (collider.gameObject.CompareTag("Ball"))
+            {
+                Debug.Log("Kapow!");
+            }
         }
     }
 }
