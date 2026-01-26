@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace GMPR2512.Lesson05
@@ -8,8 +9,13 @@ namespace GMPR2512.Lesson05
         {
             if (collider.gameObject.CompareTag("Ball"))
             {
-                Debug.Log("Kapow!");
+                StartCoroutine(RespawnBall(collider.gameObject));
             }
+        }
+
+        private IEnumerator RespawnBall(GameObject ball)
+        {
+            
         }
     }
 }
