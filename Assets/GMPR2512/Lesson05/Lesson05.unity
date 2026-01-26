@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614c4242331e42249998f2b8ad6a69f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson05::GMPR2512.Lesson05.DeathZone
+  _spawnPoint: {fileID: 1711354177}
 --- !u!114 &1437343518
 MonoBehaviour:
   m_ObjectHideFlags: 0
