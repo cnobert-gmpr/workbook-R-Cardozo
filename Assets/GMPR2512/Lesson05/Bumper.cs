@@ -18,14 +18,17 @@ namespace GMPR2512.Lesson05
                         ContactPoint2D contact = collision.GetContact(0);
                         normal = contact.normal;  // points *outward* from the bumper surface
                     }
+
                     // Step 2: If for some reason we didn't get a contact normal, fall back
                     if (normal == Vector2.zero)
                     {
                         Vector2 direction = (collision.rigidbody.position - (Vector2)transform.position).normalized;
                         normal = direction;
                     }
+
                     // Step 3: Calculate an impulse along the normal
                     Vector2 impulse = normal * _bumperForce;
+                    
                     // Step 4: Apply as an instantaneous force (ignores mass scaling)
 
                     collision.rigidbody.AddForce();
