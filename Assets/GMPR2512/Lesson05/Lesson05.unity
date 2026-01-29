@@ -423,7 +423,6 @@ GameObject:
   - component: {fileID: 1437343515}
   - component: {fileID: 1437343516}
   - component: {fileID: 1437343517}
-  - component: {fileID: 1437343518}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: Untagged
@@ -505,20 +504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson05::GMPR2512.Lesson05.DeathZone
   _spawnPoint: {fileID: 1711354177}
---- !u!114 &1437343518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437343514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27390757ab20f3f408c8068b88559237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.ShowGizmo
-  _gizmoColour: {r: 1, g: 0, b: 0, a: 1}
-  _radius: 0.5
 --- !u!1 &1711354175
 GameObject:
   m_ObjectHideFlags: 0
