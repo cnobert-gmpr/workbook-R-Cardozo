@@ -28,10 +28,10 @@ namespace GMPR2512.Lesson05
 
                     // Step 3: Calculate an impulse along the normal
                     Vector2 impulse = normal * _bumperForce;
-                    
+
                     // Step 4: Apply as an instantaneous force (ignores mass scaling)
 
-                    collision.rigidbody.AddForce();
+                    collision.rigidbody.AddForce(impulse, ForceMode2D.Impulse);
                 }
             }
         }
