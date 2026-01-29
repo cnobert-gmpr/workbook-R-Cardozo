@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace GMPR2512.Lesson05
@@ -46,8 +47,20 @@ namespace GMPR2512.Lesson05
 
                     collision.rigidbody.AddForce(impulse, ForceMode2D.Impulse);
                     #endregion
+
+                    #region Change colour of ball
+                    if (!_isLit)
+                    {
+                        StartCoroutine(LightUp());
+                    }
+                    #endregion
                 }
             }
+        }
+
+        private IEnumerator LightUp()
+        {
+            
         }
     }
 }
