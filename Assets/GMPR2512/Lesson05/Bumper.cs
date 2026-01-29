@@ -4,6 +4,7 @@ namespace GMPR2512.Lesson05
 {
     public class Bumper : MonoBehaviour
     {
+        [SerializeField] private float _bumperForce;
         void OnCollisionEnter2D(Collision2D collision)
         {
             if(collision.collider.CompareTag("Ball")){
