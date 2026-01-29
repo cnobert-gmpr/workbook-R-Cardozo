@@ -63,6 +63,8 @@ namespace GMPR2512.Lesson05
             _isLit = true;
             _spriteRenderer.color = _litColour;
             yield return new WaitForSeconds(_litDuration);
+            _spriteRenderer.color = _originalColour;
+            _isLit = false;
         }
     }
 }
