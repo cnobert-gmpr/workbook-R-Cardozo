@@ -28,7 +28,7 @@ namespace GMPR2512.Lesson05
                     Vector2 impulse = normal * _bumperForce;
                     // Step 4: Apply as an instantaneous force (ignores mass scaling)
 
-                    collision.rigidbody.AddForce()
+                    collision.rigidbody.AddForce();
                 }
             }
         }
