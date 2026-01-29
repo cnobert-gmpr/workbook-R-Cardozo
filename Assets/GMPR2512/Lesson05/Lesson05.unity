@@ -154,7 +154,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8dbfa0330277a0740b62ab0ae5aab7f2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52a2d4e1f9c5ec4fb1607fdcc03396d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson05::GMPR2512.Lesson05.Bumper
-  _bumperForce: 1500
+  _bumperForce: 200
 --- !u!58 &264591298
 CircleCollider2D:
   m_ObjectHideFlags: 0
