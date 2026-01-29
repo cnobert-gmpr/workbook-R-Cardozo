@@ -60,7 +60,9 @@ namespace GMPR2512.Lesson05
 
         private IEnumerator LightUp()
         {
-            
+            _isLit = true;
+            _spriteRenderer.color = _litColour;
+            yield return new WaitForSeconds(_litDuration);
         }
     }
 }
