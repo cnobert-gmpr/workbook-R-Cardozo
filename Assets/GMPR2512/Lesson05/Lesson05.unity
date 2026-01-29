@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52a2d4e1f9c5ec4fb1607fdcc03396d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson05::GMPR2512.Lesson05.Bumper
+  _bumperForce: 1500
 --- !u!58 &264591298
 CircleCollider2D:
   m_ObjectHideFlags: 0
