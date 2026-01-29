@@ -4,7 +4,18 @@ namespace GMPR2512.Lesson05
 {
     public class Bumper : MonoBehaviour
     {
-        [SerializeField] private float _bumperForce;
+        [SerializeField] private float _bumperForce = 45, _litDuration = 0.2f;
+        [SerializeField] private Color _litColour = Color.yellow;
+        private bool _isLit = false;
+        private Color _originalColour;
+        private SpriteRenderer _spriteRenderer;
+
+        void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _originalColour = _spriteRenderer.color;
+        }
+
         void OnCollisionEnter2D(Collision2D collision)
         {
             if(collision.collider.CompareTag("Ball")){
@@ -12,6 +23,7 @@ namespace GMPR2512.Lesson05
 
                 if(collision.rigidbody != null)
                 {
+                    #region Add bumper force
                     // Step 1: Get the normal of the first contact point
                     Vector2 normal = Vector2.zero;
                     if (collision.contactCount > 0)
@@ -33,6 +45,7 @@ namespace GMPR2512.Lesson05
                     // Step 4: Apply as an instantaneous force (ignores mass scaling)
 
                     collision.rigidbody.AddForce(impulse, ForceMode2D.Impulse);
+                    #endregion
                 }
             }
         }
