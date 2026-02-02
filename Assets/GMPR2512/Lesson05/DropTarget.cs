@@ -20,7 +20,8 @@ namespace GMPR2512.Lesson05
         {
             if(collision.collider.CompareTag("ball") && !_isDown)
             {
-                
+                _isDown = true;
+                _renderer.color = _hitColour;
             }
         }
     }
