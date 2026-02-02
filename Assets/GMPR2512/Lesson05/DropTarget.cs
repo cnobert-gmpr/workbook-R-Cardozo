@@ -22,7 +22,19 @@ namespace GMPR2512.Lesson05
             {
                 _isDown = true;
                 _renderer.color = _hitColour;
+                Invoke(nameof(HideTarget), _hideDelay);
             }
+        }
+
+        void HideTarget()
+        {
+            this.gameObject.SetActive(false);
+            Invoke(nameof(ResetTarget), _resetDelay);
+        }
+
+        void ResetTarget()
+        {
+            
         }
     }
 }
