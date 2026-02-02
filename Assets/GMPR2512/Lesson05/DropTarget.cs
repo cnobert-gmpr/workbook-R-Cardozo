@@ -9,5 +9,19 @@ namespace GMPR2512.Lesson05
         private bool _isDown = false;
         private SpriteRenderer _renderer;
         private Color _originalColour;
+
+        void Awake()
+        {
+            _renderer = GetComponent<SpriteRenderer>();
+            _originalColour = _renderer.color;
+        }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if(collision.collider.CompareTag("ball") && !_isDown)
+            {
+                
+            }
+        }
     }
 }
