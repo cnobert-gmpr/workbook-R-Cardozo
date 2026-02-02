@@ -4,16 +4,10 @@ namespace GMPR2512.Lesson05
 {
     public class DropTarget : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+        [SerializeField] private Color _hitColour = Color.navyBlue;
+        [SerializeField] private float _hideDelay = 0.1f, _resetDelay = 2f;
+        private bool _isDown = false;
+        private SpriteRenderer _renderer;
+        private Color _originalColour;
     }
 }
