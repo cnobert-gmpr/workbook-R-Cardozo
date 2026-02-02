@@ -18,7 +18,7 @@ namespace GMPR2512.Lesson05
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-            if(collision.collider.CompareTag("ball") && !_isDown)
+            if(collision.collider.CompareTag("Ball") && !_isDown)
             {
                 _isDown = true;
                 _renderer.color = _hitColour;
