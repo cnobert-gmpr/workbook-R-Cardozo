@@ -34,7 +34,9 @@ namespace GMPR2512.Lesson05
 
         void ResetTarget()
         {
-            
+            _renderer.color = _originalColour;
+            gameObject.SetActive(true);
+            _isDown = false;
         }
     }
 }
