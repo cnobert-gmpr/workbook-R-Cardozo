@@ -39,7 +39,8 @@ namespace GMPR2512.Lesson05
                         Vector2 direction = (collision.rigidbody.position - (Vector2)transform.position).normalized;
                         normal = direction;
                     }
-
+                    
+                    normal *= -1;
                     // Step 3: Calculate an impulse along the normal
                     Vector2 impulse = normal * _bumperForce;
 
