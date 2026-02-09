@@ -4,13 +4,12 @@ namespace GMPR2512.Lesson06
 {
     public class Flipper : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
+        private HingeJoint2D _joint2D;
 
-        // Update is called once per frame
+        void Awake()
+        {
+            _joint2D = GetComponent<HingeJoint2D>();
+        }
         void Update()
         {
         
