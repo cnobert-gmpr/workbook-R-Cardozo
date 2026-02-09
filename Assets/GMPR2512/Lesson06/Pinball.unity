@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 1259486375}
   m_Layer: 0
   m_Name: FlipperRight
-  m_TagString: Untagged
+  m_TagString: Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 2049107218}
   m_Layer: 0
   m_Name: FlipperLeft
-  m_TagString: Untagged
+  m_TagString: Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
