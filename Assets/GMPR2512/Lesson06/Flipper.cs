@@ -12,7 +12,15 @@ namespace GMPR2512.Lesson06
         }
         void Update()
         {
-            _joint2D.useMotor = Input.GetKey(KeyCode.RightShift);
+            if (_joint2D.CompareTag("Left"))
+            {
+                _joint2D.useMotor = Input.GetKey(KeyCode.LeftShift);
+            }
+
+            if (_joint2D.CompareTag("Right"))
+            {
+                _joint2D.useMotor = Input.GetKey(KeyCode.RightShift);
+            }
         }
     }
 }
