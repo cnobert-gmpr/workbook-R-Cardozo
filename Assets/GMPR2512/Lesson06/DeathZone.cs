@@ -1,19 +1,29 @@
+using System.Collections;
 using UnityEngine;
 
 namespace GMPR2512.Lesson06
 {
     public class DeathZone : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        [SerializeField] private Transform _spawnPoint;
+
+        void OnTriggerEnter2D(Collider2D collider)
         {
-        
+            if (collider.gameObject.CompareTag("Ball"))
+            {
+                StartCoroutine(RespawnBall(collider.gameObject));
+            }
         }
 
-        // Update is called once per frame
-        void Update()
+        private IEnumerator RespawnBall(GameObject ball)
         {
-        
+            yield return new WaitForSeconds(1);
+            Rigidbody2D BallRB = ball.GetComponent<Rigidbody2D>();
+
+            BallRB.linearVelocity = Vector2.zero;
+            BallRB.angularVelocity = 0;
+
+            ball.transform.position = _spawnPoint.position;
         }
     }
 }
