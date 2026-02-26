@@ -6,6 +6,7 @@ namespace GMPR2512.Lesson06
     public class DeathZone : MonoBehaviour
     {
         [SerializeField] private Transform _spawnPoint;
+        [SerializeField] private Bumper _bumper1Script, _bumper2Script;
 
         void OnTriggerEnter2D(Collider2D collider)
         {
