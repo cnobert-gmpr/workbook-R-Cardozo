@@ -7,12 +7,13 @@ namespace GMPR2512.Lesson07
 {
     public class Ship : MonoBehaviour
     {
-        [SerializeField] private float _movementSpeed = 2f;
-        private InputAction _moveAction;
+        [SerializeField] private float _movementSpeed = 2, _rotationSpeed = 500;
+        private InputAction _moveAction, _rotationAction;
 
         void Awake()
         {
             _moveAction = InputSystem.actions.FindAction("SpaceInvaders/Move");
+            _rotationAction = InputSystem.actions.FindAction("SpaceInvaders/Move");
         }
 
         void Update()
@@ -20,6 +21,8 @@ namespace GMPR2512.Lesson07
             Vector2 moveDirection = new Vector2(_moveAction.ReadValue<Vector2>().x, 0);
             Vector2 translation = moveDirection.normalized * _movementSpeed * Time.deltaTime;
             transform.Translate(translation, Space.Self);
+
+            float rotationValue = _rotationAction.ReadValue<Vector2>().y * _rotationSpeed * Time.deltaTime;
         }
     }
 }
