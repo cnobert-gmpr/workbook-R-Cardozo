@@ -17,7 +17,7 @@ namespace GMPR2512.Lesson07
 
         void Update()
         {
-            Vector2 moveDirection = _moveAction.ReadValue<Vector2>();
+            Vector2 moveDirection = new Vector2(_moveAction.ReadValue<Vector2>().x, 0);
             Vector2 translation = moveDirection.normalized * _movementSpeed * Time.deltaTime;
             transform.Translate(translation, Space.Self);
         }
