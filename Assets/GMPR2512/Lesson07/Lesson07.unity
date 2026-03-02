@@ -360,6 +360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d809fb0ee620147b785fd1d555c72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson07::GMPR2512.Lesson07.Ship
+  _movementSpeed: 2
+  _rotationSpeed: 250
+  _rotationLimit: 45
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
