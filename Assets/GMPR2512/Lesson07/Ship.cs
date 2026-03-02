@@ -22,7 +22,9 @@ namespace GMPR2512.Lesson07
             Vector2 translation = moveDirection.normalized * _movementSpeed * Time.deltaTime;
             transform.Translate(translation, Space.Self);
 
-            float rotationValue = _rotationAction.ReadValue<Vector2>().y * _rotationSpeed * Time.deltaTime;
+            float rotationInput = _rotationAction.ReadValue<Vector2>().x;
+            float rotationAmount = rotationInput * _rotationSpeed * Time.deltaTime;
+            transform.Rotate(Vector3.forward, -rotationAmount);
         }
     }
 }
