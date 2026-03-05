@@ -23,28 +23,20 @@ namespace GMPR2512.Lesson07
         void OnEnable()
         {
             #region enable actions
-            if(_moveAction != null)
-                _moveAction.Enable();
-            if(_rotationAction != null)
-                _rotationAction.Enable();
-            if(_scaleAction != null)
-                _scaleAction.Enable();
-            if(_fireAction != null)
-                _fireAction.Enable();
+            _moveAction?.Enable();
+            _rotationAction?.Enable();
+            _scaleAction?.Enable();
+            _fireAction?.Enable();
             #endregion
         }
 
         void OnDisable()
         {
             #region disable actions
-            if(_moveAction != null)
-                _moveAction.Disable();
-            if(_rotationAction != null)
-                _rotationAction.Disable();
-            if(_scaleAction != null)
-                _scaleAction.Disable();
-            if(_fireAction != null)
-                _fireAction.Disable();
+            _moveAction?.Disable();
+            _rotationAction?.Disable();
+            _scaleAction?.Disable();
+            _fireAction?.Disable();
             #endregion
         }
 
