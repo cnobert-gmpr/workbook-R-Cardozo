@@ -10,13 +10,14 @@ namespace GMPR2512.Lesson07
     {
         [SerializeField] private float _movementSpeed = 2, _rotationSpeed = 250, _scaleSpeed = 5;
         [SerializeField] private float _rotationLimit = 45f;
-        private InputAction _moveAction, _rotationAction, _scaleAction;
+        private InputAction _moveAction, _rotationAction, _scaleAction, _fireAction;
 
         void Awake()
         {
             _moveAction = InputSystem.actions.FindAction("SpaceInvaders/Move");
             _rotationAction = InputSystem.actions.FindAction("SpaceInvaders/Move");
             _scaleAction = InputSystem.actions.FindAction("SpaceInvaders/Scale");
+            _fireAction = InputSystem.actions.FindAction("SpaceInvaders/Jump");
         }
 
         void Update()
