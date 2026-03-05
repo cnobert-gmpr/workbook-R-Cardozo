@@ -29,7 +29,7 @@ namespace GMPR2512.Lesson07
             if(_fireAction != null)
             {
                 _fireAction.Enable();
-                
+
                 _fireAction?.performed += FireButtonPressed;
                 _fireAction?.canceled += FireButtonPressed;
             }
@@ -42,6 +42,11 @@ namespace GMPR2512.Lesson07
             _rotationAction?.Disable();
             _scaleAction?.Disable();
             _fireAction?.Disable();
+        }
+
+        private void FireButtonPressed(InputAction)
+        {
+            
         }
 
         void Update()
