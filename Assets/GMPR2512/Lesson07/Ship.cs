@@ -10,6 +10,8 @@ namespace GMPR2512.Lesson07
     {
         [SerializeField] private float _movementSpeed = 2, _rotationSpeed = 250, _scaleSpeed = 5;
         [SerializeField] private float _rotationLimit = 45f;
+        [SerializeField] private GameObject _projectilePrefab;
+        
         private InputAction _moveAction, _rotationAction, _scaleAction, _fireAction;
 
         void Awake()
