@@ -87,6 +87,8 @@ namespace GMPR2512.Lesson07
 
         private void FireButtonPressed(InputAction.CallbackContext context)
         {
+            Vector3 projectileStartPosition = transform.GetChild(0).position;
+
             GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
 
             Projectile projectileScript = theProjectile.GetComponent<Projectile>();
