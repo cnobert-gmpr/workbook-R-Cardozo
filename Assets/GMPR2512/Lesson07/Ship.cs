@@ -1,6 +1,3 @@
-using Codice.Client.BaseCommands.Merge.Restorer.Finder;
-using Codice.Client.Common.GameUI;
-using Codice.CM.Common.Tree;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -32,8 +29,8 @@ namespace GMPR2512.Lesson07
             {
                 _fireAction.Enable();
 
-                _fireAction?.performed += FireButtonPressed;
-                _fireAction?.canceled += FireButtonPressed;
+                _fireAction.performed += FireButtonPressed;
+                _fireAction.canceled += FireButtonPressed;
             }
 
         }
@@ -49,6 +46,11 @@ namespace GMPR2512.Lesson07
         private void FireButtonPressed(InputAction.CallbackContext context)
         {
             GameObject theProjectiles = Instantiate(_projectilePrefab, transform.position, transform.rotation);
+        }
+
+        private void FireButtonReleased(InputAction.CallbackContext context)
+        {
+            
         }
 
         void Update()
