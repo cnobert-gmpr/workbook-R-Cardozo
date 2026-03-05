@@ -88,9 +88,6 @@ namespace GMPR2512.Lesson07
         {
             GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
 
-            Projectile projectile = theProjectile.GetComponent<Projectile>();
-            projectile.Direction = transform.up;
-
         }
 
         private void FireButtonReleased(InputAction.CallbackContext context)
