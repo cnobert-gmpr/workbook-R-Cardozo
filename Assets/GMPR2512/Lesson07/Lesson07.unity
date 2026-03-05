@@ -364,6 +364,7 @@ MonoBehaviour:
   _rotationSpeed: 250
   _scaleSpeed: 5
   _rotationLimit: 45
+  _projectilePrefab: {fileID: 8903513705922225770, guid: b7f92ee95ee2e8e4cb41fe37bfdfb5a3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
