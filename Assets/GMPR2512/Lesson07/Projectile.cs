@@ -4,8 +4,8 @@ namespace GMPR2512.Lesson07
 {
     public class Projectile : MonoBehaviour
     {
-        private float _speed, _spinVelocity;
-        private Vector2 _direction;
+        private float _speed = 10, _spinVelocity;
+        private Vector2 _direction = Vector2.up;
 
         void Update()
         {
