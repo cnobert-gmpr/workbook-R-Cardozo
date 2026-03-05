@@ -5,8 +5,8 @@ namespace GMPR2512
 {
     public class ShowGizmo : MonoBehaviour
     {
-        [SerializeField] private Color _gizmoColour = Color.red;
-        [SerializeField] private float _radius = 0.5f;
+        [SerializeField] private Color _gizmoColour = new Color(20f/255f, 20f/255f, 20f/255f, 1f);
+        [SerializeField] private float _radius = 0.1f;
 
         void OnDrawGizmos()
         {
