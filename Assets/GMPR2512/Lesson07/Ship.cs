@@ -30,9 +30,9 @@ namespace GMPR2512.Lesson07
 
             #region ship rotation
             // Takes up/down input to rotate ship
-            float rotationInput = _rotationAction.ReadValue<Vector2>().y;
+            float rotationInput = _rotationAction.ReadValue<Vector2>().normalized.y;
             float rotationAmount = rotationInput * _rotationSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.forward, -rotationAmount);
+            transform.Rotate(0, 0, rotationAmount);
             
             // Prevents rotation from going past the specified rotation limits
             Vector3 euler = transform.eulerAngles;
