@@ -9,7 +9,7 @@ namespace GMPR2512.Lesson07
 
         void Update()
         {
-            
+            transform.Translate(_direction.normalized * _speed * Time.deltaTime, Space.World);
         }
     }
 }
