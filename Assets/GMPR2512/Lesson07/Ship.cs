@@ -22,22 +22,26 @@ namespace GMPR2512.Lesson07
 
         void OnEnable()
         {
-            #region enable actions
             _moveAction?.Enable();
             _rotationAction?.Enable();
             _scaleAction?.Enable();
-            _fireAction?.Enable();
-            #endregion
+            
+            if(_fireAction != null)
+            {
+                _fireAction.Enable();
+                
+                _fireAction?.performed += FireButtonPressed;
+                _fireAction?.canceled += FireButtonPressed;
+            }
+
         }
 
         void OnDisable()
         {
-            #region disable actions
             _moveAction?.Disable();
             _rotationAction?.Disable();
             _scaleAction?.Disable();
             _fireAction?.Disable();
-            #endregion
         }
 
         void Update()
