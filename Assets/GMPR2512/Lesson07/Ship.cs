@@ -20,6 +20,20 @@ namespace GMPR2512.Lesson07
             _fireAction = InputSystem.actions.FindAction("SpaceInvaders/Jump");
         }
 
+        void OnEnable()
+        {
+            #region enable actions
+            if(_moveAction != null)
+                _moveAction.Enable();
+            if(_rotationAction != null)
+                _rotationAction.Enable();
+            if(_scaleAction != null)
+                _scaleAction.Enable();
+            if(_fireAction != null)
+                _fireAction.Enable();
+            #endregion
+        }
+
         void Update()
         {
             #region ship movement
