@@ -1,3 +1,4 @@
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -88,6 +89,10 @@ namespace GMPR2512.Lesson07
         {
             GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
 
+            Projectile projectileScript = theProjectile.GetComponent<Projectile>();
+
+            projectileScript.Speed = 7;
+            projectileScript.Direction = transform.up;
         }
 
         private void FireButtonReleased(InputAction.CallbackContext context)
