@@ -34,6 +34,20 @@ namespace GMPR2512.Lesson07
             #endregion
         }
 
+        void OnDisable()
+        {
+            #region disable actions
+            if(_moveAction != null)
+                _moveAction.Disable();
+            if(_rotationAction != null)
+                _rotationAction.Disable();
+            if(_scaleAction != null)
+                _scaleAction.Disable();
+            if(_fireAction != null)
+                _fireAction.Disable();
+            #endregion
+        }
+
         void Update()
         {
             #region ship movement
