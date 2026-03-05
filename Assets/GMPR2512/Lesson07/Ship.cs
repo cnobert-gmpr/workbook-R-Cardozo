@@ -43,20 +43,6 @@ namespace GMPR2512.Lesson07
             _fireAction?.Disable();
         }
 
-        private void FireButtonPressed(InputAction.CallbackContext context)
-        {
-            GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
-
-            Projectile projectile = theProjectile.GetComponent<Projectile>();
-            projectile.Direction = transform.up;
-
-        }
-
-        private void FireButtonReleased(InputAction.CallbackContext context)
-        {
-            
-        }
-
         void Update()
         {
             #region ship movement
@@ -96,6 +82,20 @@ namespace GMPR2512.Lesson07
             transform.localScale = scale;
             
             #endregion
+        }
+
+        private void FireButtonPressed(InputAction.CallbackContext context)
+        {
+            GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
+
+            Projectile projectile = theProjectile.GetComponent<Projectile>();
+            projectile.Direction = transform.up;
+
+        }
+
+        private void FireButtonReleased(InputAction.CallbackContext context)
+        {
+            
         }
     }
 }
