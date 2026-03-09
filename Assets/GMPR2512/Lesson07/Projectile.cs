@@ -19,9 +19,9 @@ namespace GMPR2512.Lesson07
             transform.Rotate(new Vector3(0, 0, _spinVelocity * Time.deltaTime), Space.World);
         }
 
-        void OnTriggerEnter2D(Collision2D collision)
+        void OnTriggerEnter2D(Collider2D collider)
         {
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
         }
     }
 }
