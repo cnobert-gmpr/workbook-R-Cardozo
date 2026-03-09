@@ -18,5 +18,10 @@ namespace GMPR2512.Lesson07
             transform.Translate(_direction.normalized * _speed * Time.deltaTime, Space.World);
             transform.Rotate(new Vector3(0, 0, _spinVelocity * Time.deltaTime), Space.World);
         }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            
+        }
     }
 }
