@@ -22,6 +22,7 @@ namespace GMPR2512.Lesson07
 
         void OnTriggerEnter2D(Collider2D collider)
         {
+            Instantiate(_explosionTransform, transform.position, transform.rotation);
             Destroy(collider.gameObject);
         }
     }
