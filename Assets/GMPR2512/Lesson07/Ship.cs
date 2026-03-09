@@ -89,12 +89,13 @@ namespace GMPR2512.Lesson07
         {
             Vector3 projectileStartPosition = transform.GetChild(0).position;
 
-            GameObject theProjectile = Instantiate(_projectilePrefab, transform.position, transform.rotation);
+            GameObject theProjectile = Instantiate(_projectilePrefab, projectileStartPosition, transform.rotation);
 
             Projectile projectileScript = theProjectile.GetComponent<Projectile>();
 
             projectileScript.Speed = 7;
             projectileScript.Direction = transform.up;
+            projectileScript.SpinVelocity = -2000;
         }
 
         private void FireButtonReleased(InputAction.CallbackContext context)

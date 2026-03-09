@@ -4,12 +4,14 @@ namespace GMPR2512.Lesson07
 {
     public class Projectile : MonoBehaviour
     {
-        private float _speed = 10, _spinVelocity = 1000;
+        private float _speed = 10, _spinVelocity = 0;
         private Vector2 _direction = Vector2.up;
 
-        internal Vector2 Direction { get => _direction; set => _direction = value; }
+        internal Vector2 Direction { set => _direction = value; }
         
-        internal float Speed { get => _speed; set => _speed = value; }
+        internal float Speed { set => _speed = value; }
+
+        internal float SpinVelocity { set => _spinVelocity = value; }
 
         void Update()
         {
