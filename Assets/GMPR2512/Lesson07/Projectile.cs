@@ -24,7 +24,8 @@ namespace GMPR2512.Lesson07
         {
             Instantiate(_explosionTransform, collider.transform.position, transform.rotation);
             Destroy(collider.gameObject);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
+            Destroy(transform);
         }
     }
 }
