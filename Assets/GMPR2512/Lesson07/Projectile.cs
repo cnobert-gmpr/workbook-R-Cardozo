@@ -4,7 +4,7 @@ namespace GMPR2512.Lesson07
 {
     public class Projectile : MonoBehaviour
     {
-        private float _speed = 10, _spinVelocity;
+        private float _speed = 10, _spinVelocity = 1;
         private Vector2 _direction = Vector2.up;
 
         internal Vector2 Direction { get => _direction; set => _direction = value; }
@@ -14,6 +14,7 @@ namespace GMPR2512.Lesson07
         void Update()
         {
             transform.Translate(_direction.normalized * _speed * Time.deltaTime, Space.World);
+            transform.Rotate(new Vector3(0, 0, _spinVelocity * Time.deltaTime), Space.World);
         }
     }
 }
