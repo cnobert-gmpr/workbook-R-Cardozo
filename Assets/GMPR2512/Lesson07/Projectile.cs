@@ -4,6 +4,7 @@ namespace GMPR2512.Lesson07
 {
     public class Projectile : MonoBehaviour
     {
+        [SerializeField] private GameObject _explosionTransform;
         private float _speed = 10, _spinVelocity = 0;
         private Vector2 _direction = Vector2.up;
 
