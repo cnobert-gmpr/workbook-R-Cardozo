@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37cb2121743f05b4dbbfc9832ec1fdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GMPR2512.Lesson07::GMPR2512.Lesson07.Projectile
+  _explosionTransform: {fileID: 7262464109410657806, guid: 0a945c2798ffaa74fa57c77ccff8d602, type: 3}
 --- !u!50 &-2561031978973858822
 Rigidbody2D:
   serializedVersion: 5
