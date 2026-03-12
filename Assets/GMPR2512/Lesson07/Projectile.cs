@@ -1,0 +1,36 @@
+using System.ComponentModel;
+using UnityEngine;
+
+namespace GMPR2512.Lesson07
+{
+    public class Projectile : MonoBehaviour
+    {
+        [SerializeField] private GameObject _explosionTransform;
+        private float _speed = 10, _spinVelocity = 0;
+        private Vector2 _direction = Vector2.up;
+
+        internal Vector2 Direction { set => _direction = value; }
+        
+        internal float Speed { set => _speed = value; }
+
+        internal float SpinVelocity { set => _spinVelocity = value; }
+
+        void Update()
+        {
+            transform.Translate(_direction.normalized * _speed * Time.deltaTime, Space.World);
+            transform.Rotate(new Vector3(0, 0, _spinVelocity * Time.deltaTime), Space.World);
+        }
+
+        void OnTriggerEnter2D(Collider2D collider)
+        {
+            if (collider.transform.tag.Equals("Alien"))
+            {
+                GameObject explosion = Instantiate(_explosionTransform, collider.transform.position, transform.rotation);
+                Destroy(collider.gameObject);
+                Destroy(gameObject);
+                Destroy(transform);
+                Destroy(explosion, 0.25f); // Destroys explosion after short period
+            }
+        }
+    }
+}
