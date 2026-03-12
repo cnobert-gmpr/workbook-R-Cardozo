@@ -4,16 +4,13 @@ namespace GMPR2512.Lesson07
 {
     public class Alien : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
+        [SerializeField] private float _projectileSpeed = 5, _projectileSpinVelocity = 2000;
+        [SerializeField] private GameObject _projectilePrefab;
+        [SerializeField] private int _upperRandomFiringRange;
 
-        // Update is called once per frame
         void Update()
         {
-        
+            int rando = Random.Range(1, _upperRandomFiringRange);
         }
     }
 }
