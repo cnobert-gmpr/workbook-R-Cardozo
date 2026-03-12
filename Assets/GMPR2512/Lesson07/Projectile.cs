@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using UnityEngine;
 
 namespace GMPR2512.Lesson07
@@ -24,10 +25,11 @@ namespace GMPR2512.Lesson07
         {
             if (collider.transform.tag.Equals("Alien"))
             {
-                Instantiate(_explosionTransform, collider.transform.position, transform.rotation);
+                GameObject explosion = Instantiate(_explosionTransform, collider.transform.position, transform.rotation);
                 Destroy(collider.gameObject);
                 Destroy(gameObject);
                 Destroy(transform);
+                Destroy(explosion, 0.25f); // Destroys explosion after short period
             }
         }
     }
