@@ -1,3 +1,5 @@
+using System.Numerics;
+using System.Threading.Tasks.Dataflow;
 using UnityEngine;
 
 namespace GMPR2512.Lesson07
@@ -11,6 +13,12 @@ namespace GMPR2512.Lesson07
         void Update()
         {
             int rando = Random.Range(1, _upperRandomFiringRange);
+            if(rando == 1)
+            {
+                Vector3 firingPosition = transform.GetChild(0).position;
+
+                GameObject thePrefab = Instantiate(_projectilePrefab, firingPosition, transform.rotation);
+            }
         }
     }
 }
