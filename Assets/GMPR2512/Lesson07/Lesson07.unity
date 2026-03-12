@@ -1366,6 +1366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738035416}
   - component: {fileID: 1738035415}
+  - component: {fileID: 1738035417}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Untagged
@@ -1448,6 +1449,22 @@ Transform:
   - {fileID: 1082621360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &1738035417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738035414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399a0f5db9a54324fa33696159e12fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GMPR2512.Lesson07::GMPR2512.Lesson07.Alien
+  _projectileSpeed: 5
+  _projectileSpinVelocity: 2000
+  _projectilePrefab: {fileID: 8903513705922225770, guid: b7f92ee95ee2e8e4cb41fe37bfdfb5a3, type: 3}
+  _upperRandomFiringRange: 0
 --- !u!1 &1936650685
 GameObject:
   m_ObjectHideFlags: 0
