@@ -1464,7 +1464,7 @@ MonoBehaviour:
   _projectileSpeed: 5
   _projectileSpinVelocity: 2000
   _projectilePrefab: {fileID: 8903513705922225770, guid: b7f92ee95ee2e8e4cb41fe37bfdfb5a3, type: 3}
-  _upperRandomFiringRange: 0
+  _upperRandomFiringRange: 400
 --- !u!1 &1936650685
 GameObject:
   m_ObjectHideFlags: 0

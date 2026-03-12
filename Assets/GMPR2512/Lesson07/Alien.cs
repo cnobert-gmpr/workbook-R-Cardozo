@@ -1,5 +1,3 @@
-using System.Numerics;
-using System.Threading.Tasks.Dataflow;
 using UnityEngine;
 
 namespace GMPR2512.Lesson07
@@ -16,8 +14,13 @@ namespace GMPR2512.Lesson07
             if(rando == 1)
             {
                 Vector3 firingPosition = transform.GetChild(0).position;
+                GameObject theProjectile = Instantiate(_projectilePrefab, firingPosition, transform.rotation);
 
-                GameObject thePrefab = Instantiate(_projectilePrefab, firingPosition, transform.rotation);
+                Projectile projectileScript = theProjectile.GetComponent<Projectile>();
+
+                projectileScript.Speed = _projectileSpeed;
+                projectileScript.Direction = transform.up;
+                projectileScript.SpinVelocity = -_projectileSpinVelocity;
             }
         }
     }
