@@ -32,7 +32,6 @@ namespace GMPR2512.Lesson07
                 _fireAction.Enable();
 
                 _fireAction.performed += FireButtonPressed;
-                _fireAction.canceled += FireButtonPressed;
             }
 
         }
