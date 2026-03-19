@@ -31,6 +31,7 @@ namespace GMPR2512.Lesson08
         private void ChangeToScene01()
         {
             Debug.Log("Button Clicked! :)");
+            SceneManager.LoadScene(1);
         }
     }
 }
