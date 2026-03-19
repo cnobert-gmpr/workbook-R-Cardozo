@@ -7,12 +7,12 @@ namespace GMPR2512.Lesson08
 {
     public class Scene00_Button_Handler : MonoBehaviour
     {
-        private Scene00_Button_Handler _changeToScene01Button;
+        private Button _changeToScene01Button;
 
         private void OnEnable()
         {
-            VisualElement root = GetComponent<>().rootVisualElement;
-            _changeToScene01Button = root.Q<Button>("ChangeToScene01Button");
+            VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+            _changeToScene01Button = root.Q<Button>("PlayButton");
 
             if(_changeToScene01Button != null)
             {
