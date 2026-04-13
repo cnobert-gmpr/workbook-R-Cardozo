@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 108648395}
   - component: {fileID: 108648394}
   - component: {fileID: 108648396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 173891990}
   - component: {fileID: 173891991}
   - component: {fileID: 173891992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1246209589}
   - component: {fileID: 1246209590}
   - component: {fileID: 1246209591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 1392463996}
   - component: {fileID: 1392463997}
   - component: {fileID: 1392463998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 1486517070}
   - component: {fileID: 1486517071}
   - component: {fileID: 1486517072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: GMPR2512.Lesson09::GMPR2512.Lesson09.CharacterController
   _maxSpeed: 2
   _groundCheck: {fileID: 1709654581}
-  _jumpForce: 500
+  _jumpForce: 460
 --- !u!4 &1709654581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 1784254605}
   - component: {fileID: 1784254606}
   - component: {fileID: 1784254607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
