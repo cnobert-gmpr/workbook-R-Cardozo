@@ -588,11 +588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.939
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.081
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -629,8 +629,58 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1709654580}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1709654583}
   m_SourcePrefab: {fileID: 100100000, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+--- !u!1 &1709654579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1709654578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709654580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709654579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476d1dfbb6cf90f4990621c89a8086b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GMPR2512.Lesson09::GMPR2512.Lesson09.CharacterController
+  _maxSpeed: 5
+  _groundCheck: {fileID: 1709654581}
+  _jumpForce: 1000
+--- !u!4 &1709654581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1709654578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1709654582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1709654578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709654583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709654582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27390757ab20f3f408c8068b88559237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.ShowGizmo
+  _gizmoColour: {r: 0.019607844, g: 0.019607844, b: 0.019607844, a: 1}
+  _radius: 0.1
 --- !u!1 &1784254604
 GameObject:
   m_ObjectHideFlags: 0
