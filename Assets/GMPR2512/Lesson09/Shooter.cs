@@ -13,6 +13,14 @@ namespace GMPR2512.Lesson09
         {
             if(_laserLine == null)
                 _laserLine = GetComponent<LineRenderer>();
+            
+            if(_laserLine != null)
+            {
+                _laserLine.positionCount = 2;
+                _laserLine.useWorldSpace = true;
+                _laserLine.startWidth = 0.05f;
+                _laserLine.endWidth = 0.05f;
+            }
         }
 
         void Update()
