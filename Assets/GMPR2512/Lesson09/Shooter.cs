@@ -6,6 +6,7 @@ namespace GMPR2512.Lesson09
     public class Shooter : MonoBehaviour
     {
         private Transform _lastObjectHit = null;
+
         void Update()
         {
             float rotationInput = 0;
@@ -21,14 +22,19 @@ namespace GMPR2512.Lesson09
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
             RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, layerMask);
 
+            /** Raycasting for lasers
             if(rh2d.transform != null)
             {
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
+
+                if(_lastObjectHit != null && rh2d.transform != _lastObjectHit)
+                    _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
+
                 _lastObjectHit = rh2d.transform;
             }
-
             else if(_lastObjectHit != null)
                 _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
+            **/
         }
 
         /**
