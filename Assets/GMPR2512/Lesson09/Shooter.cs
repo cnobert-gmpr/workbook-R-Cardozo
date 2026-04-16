@@ -22,7 +22,7 @@ namespace GMPR2512.Lesson09
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
             RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, layerMask);
 
-            /** Raycasting for lasers
+            /* Raycasting for lasers
             if(rh2d.transform != null)
             {
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
@@ -34,15 +34,15 @@ namespace GMPR2512.Lesson09
             }
             else if(_lastObjectHit != null)
                 _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
-            **/
+            */
         }
 
-        /**
+        /* Draw Gizmo
         void OnDrawGizmo()
         {
             Gizmos.color = Color.yellowNice;
             Gizmos.DrawRay(transform.position, transform.right * 10);
         }
-        **/
+        */
     }
 }
