@@ -38,6 +38,11 @@ namespace GMPR2512.Lesson09
             float horizontalAxis = Input.GetAxis("Horizontal");
             _myAnimator.SetFloat("Speed", Mathf.Abs(horizontalAxis));
 
+            if ((horizontalAxis > 0 && !_facingRight) || (horizontalAxis < 0 && _facingRight))
+            {
+                Flip();
+            }
+
             //Have we reached maxSpeed? If not, add force.
             if (horizontalAxis * _myRigidBody.linearVelocity.x < _maxSpeed)
             {
