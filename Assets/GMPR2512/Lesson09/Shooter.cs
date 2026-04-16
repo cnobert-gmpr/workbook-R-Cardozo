@@ -6,6 +6,8 @@ namespace GMPR2512.Lesson09
     public class Shooter : MonoBehaviour
     {
         private Transform _lastObjectHit = null;
+        [SerializeField] private float _laserLength = 8f;
+        private LineRenderer _laserLine;
 
         void Update()
         {
