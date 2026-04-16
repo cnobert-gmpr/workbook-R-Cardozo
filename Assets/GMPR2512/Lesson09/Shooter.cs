@@ -9,6 +9,12 @@ namespace GMPR2512.Lesson09
         [SerializeField] private float _laserLength = 8f;
         private LineRenderer _laserLine;
 
+        void Awake()
+        {
+            if(_laserLine == null)
+                _laserLine = GetComponent<LineRenderer>();
+        }
+
         void Update()
         {
             float rotationInput = 0;
