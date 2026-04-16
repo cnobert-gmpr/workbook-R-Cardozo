@@ -13,6 +13,7 @@ namespace GMPR2512.Lesson09
             else if(Input.GetKey(KeyCode.Period))
                 rotationInput = -1;
             
+            rotationInput *= Time.deltaTime;
             transform.parent.Rotate(new Vector3(0, 0, rotationInput));
         }
     }
