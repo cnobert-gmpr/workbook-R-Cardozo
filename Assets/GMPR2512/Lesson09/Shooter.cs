@@ -22,7 +22,11 @@ namespace GMPR2512.Lesson09
             RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, layerMask);
 
             if(rh2d.transform != null)
+            {
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
+                _lastObjectHit = rh2d.transform;
+            }
+
             else if(_lastObjectHit != null)
                 _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
         }
