@@ -5,6 +5,7 @@ namespace GMPR2512.Lesson09
 {
     public class Shooter : MonoBehaviour
     {
+        private Transform _lastObjectHit = null;
         void Update()
         {
             float rotationInput = 0;
@@ -22,6 +23,8 @@ namespace GMPR2512.Lesson09
 
             if(rh2d.transform != null)
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            else if(_lastObjectHit != null)
+                _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
         }
 
         /**
