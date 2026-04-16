@@ -64,6 +64,10 @@ namespace GMPR2512.Lesson09
         void Flip()
         {
             _facingRight = !_facingRight;
+
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
         }
     }
 }
