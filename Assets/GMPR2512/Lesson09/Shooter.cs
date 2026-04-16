@@ -25,6 +25,7 @@ namespace GMPR2512.Lesson09
 
         void Update()
         {
+            #region rotation
             float rotationInput = 0;
 
             if(Input.GetKey(KeyCode.Comma))
@@ -34,11 +35,14 @@ namespace GMPR2512.Lesson09
             
             rotationInput *= Time.deltaTime;
             transform.parent.Rotate(new Vector3(0, 0, rotationInput));
+            #endregion
 
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
-            RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, layerMask);
+            RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, _laserLength, layerMask);
 
-            /* Raycasting for lasers
+            Vector3 endPoint = transform.position + transform.right * _laserLength;
+
+            // Raycasting for lasers
             if(rh2d.transform != null)
             {
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
@@ -50,7 +54,7 @@ namespace GMPR2512.Lesson09
             }
             else if(_lastObjectHit != null)
                 _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
-            */
+            //
         }
 
         /* Draw Gizmo
