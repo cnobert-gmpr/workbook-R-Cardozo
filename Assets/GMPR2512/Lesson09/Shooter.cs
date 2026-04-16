@@ -42,6 +42,15 @@ namespace GMPR2512.Lesson09
 
             Vector3 endPoint = transform.position + transform.right * _laserLength;
 
+            if(rh2d.collider != null)
+                endPoint = rh2d.point;
+            
+            if(_laserLine != null)
+            {
+                _laserLine.SetPosition(0, transform.position);
+                _laserLine.SetPosition(1, endPoint);
+            }
+
             // Raycasting for lasers
             if(rh2d.transform != null)
             {
