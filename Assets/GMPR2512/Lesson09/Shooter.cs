@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GMPR2512.Lesson09
@@ -17,6 +18,10 @@ namespace GMPR2512.Lesson09
             transform.parent.Rotate(new Vector3(0, 0, rotationInput));
 
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
+            RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, layerMask);
+
+            if(rh2d.transform != null)
+                rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
         }
 
         /**
