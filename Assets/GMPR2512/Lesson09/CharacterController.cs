@@ -60,5 +60,10 @@ namespace GMPR2512.Lesson09
                 _jump = false;
             }
         }
+
+        void Flip()
+        {
+            _facingRight = !_facingRight;
+        }
     }
 }
