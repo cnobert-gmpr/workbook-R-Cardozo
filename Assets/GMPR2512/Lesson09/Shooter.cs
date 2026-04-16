@@ -12,6 +12,8 @@ namespace GMPR2512.Lesson09
                 rotationInput = 1;
             else if(Input.GetKey(KeyCode.Period))
                 rotationInput = -1;
+            
+            transform.parent.Rotate(new Vector3(0, 0, rotationInput));
         }
     }
 }
