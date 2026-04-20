@@ -257,11 +257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.53
+      value: -3.81
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.z
@@ -737,6 +737,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 322322256319614521, guid: db81fd4df17754d4caa5f99246119ba2, type: 3}
+      propertyPath: _laserLength
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 513668713070239479, guid: db81fd4df17754d4caa5f99246119ba2, type: 3}
       propertyPath: m_Name
       value: LaserPivot
