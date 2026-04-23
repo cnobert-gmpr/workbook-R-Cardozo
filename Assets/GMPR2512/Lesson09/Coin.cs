@@ -10,5 +10,10 @@ namespace GMPR2512.Lesson09
         {
             _soundHub = GameObject.Find("SoundHub").GetComponent<SoundHub>();
         }
+
+        private void OnTriggerEnter2D(Collider2D collision){
+            _soundHub.PlayCoinSound();
+            Destroy(gameObject);
+        }
     }
 }
