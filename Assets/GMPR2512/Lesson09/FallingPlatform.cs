@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace GMPR2512.Lesson09
@@ -17,7 +18,13 @@ namespace GMPR2512.Lesson09
         {
             _renderer.material.color = Color.crimson;
 
-            
+            StartCoroutine(nameof(WaitThenFall));
+        }
+
+        IEnumerator WaitThenFall()
+        {
+            yield return new WaitForSeconds(2);
+            _rb2D.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 }
