@@ -19,7 +19,7 @@ namespace GMPR2512.Lesson09
                 _laserLine.positionCount = 2;
                 _laserLine.useWorldSpace = true;
                 _laserLine.startWidth = 0.05f;
-                _laserLine.endWidth = 0.15f;
+                _laserLine.endWidth = 0.25f;
             }
         }
 
