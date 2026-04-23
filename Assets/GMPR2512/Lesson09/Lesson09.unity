@@ -197,6 +197,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.g
+      value: 0.66981125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.r
+      value: 0.827977
+      objectReference: {fileID: 0}
     - target: {fileID: 8430501967910926244, guid: fd60e675f255d0947b9054664d850e51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.03
@@ -258,6 +270,18 @@ PrefabInstance:
     - target: {fileID: 5009168977707742776, guid: fd60e675f255d0947b9054664d850e51, type: 3}
       propertyPath: m_Name
       value: CustomCoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.g
+      value: 0.66981125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442843234092399707, guid: fd60e675f255d0947b9054664d850e51, type: 3}
+      propertyPath: m_Color.r
+      value: 0.827977
       objectReference: {fileID: 0}
     - target: {fileID: 8430501967910926244, guid: fd60e675f255d0947b9054664d850e51, type: 3}
       propertyPath: m_LocalPosition.x
