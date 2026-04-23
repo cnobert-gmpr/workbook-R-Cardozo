@@ -37,7 +37,7 @@ namespace GMPR2512.Lesson09
             rotationInput *= Time.deltaTime;
             **/
 
-            transform.parent.Rotate(new Vector3(0, 0, 100 * Time.deltaTime));
+            transform.parent.Rotate(new Vector3(0, 0, 60 * -Time.deltaTime));
             #endregion
 
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
