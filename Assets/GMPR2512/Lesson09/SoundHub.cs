@@ -1,19 +1,20 @@
+using System.Diagnostics;
 using UnityEngine;
 
 namespace GMPR2512.Lesson09
 {
     public class SoundHub : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private AudioSource[] _sources;
+
+        void Awake()
         {
-        
+            _sources = GetComponents<AudioSource>();
         }
 
-        // Update is called once per frame
-        void Update()
+        public void PlayCoinSound()
         {
-        
+            _sources[0].Play();
         }
     }
 }
