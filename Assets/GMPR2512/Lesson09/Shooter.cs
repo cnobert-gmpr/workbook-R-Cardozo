@@ -59,7 +59,7 @@ namespace GMPR2512.Lesson09
             #endregion
 
             // Raycasting for lasers
-            if(rh2d.transform != null && rh2d.transform.gameObject.layer.Equals("Player"))
+            if(rh2d.transform != null && rh2d.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Player")))
             {
                 Destroy(rh2d.transform.gameObject);
 
