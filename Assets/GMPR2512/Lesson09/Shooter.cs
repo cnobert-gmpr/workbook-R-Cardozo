@@ -40,8 +40,10 @@ namespace GMPR2512.Lesson09
             transform.parent.Rotate(new Vector3(0, 0, 60 * -Time.deltaTime));
             #endregion
 
-            int layerMask = LayerMask.GetMask("Ground", "Enemy");
+            int layerMask = LayerMask.GetMask("Player", "Ground");
             RaycastHit2D rh2d = Physics2D.Raycast(transform.position, transform.right, _laserLength, layerMask);
+
+            #region laser line length
 
             Vector3 endPoint = transform.position + transform.right * _laserLength;
 
@@ -53,6 +55,8 @@ namespace GMPR2512.Lesson09
                 _laserLine.SetPosition(0, transform.position);
                 _laserLine.SetPosition(1, endPoint);
             }
+
+            #endregion
 
             // Raycasting for lasers
             if(rh2d.transform != null)
