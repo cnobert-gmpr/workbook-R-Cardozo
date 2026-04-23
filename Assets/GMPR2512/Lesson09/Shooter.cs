@@ -59,18 +59,23 @@ namespace GMPR2512.Lesson09
             #endregion
 
             // Raycasting for lasers
-            if(rh2d.transform != null)
+            if(rh2d.transform != null && rh2d.transform.gameObject.layer.Equals("Player"))
             {
+                Destroy(rh2d.transform.gameObject);
+
+                /**
                 rh2d.transform.gameObject.GetComponent<Renderer>().material.color = Color.green;
 
                 if(_lastObjectHit != null && rh2d.transform != _lastObjectHit)
                     _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
 
                 _lastObjectHit = rh2d.transform;
+                **/
             }
+            /**
             else if(_lastObjectHit != null)
                 _lastObjectHit.gameObject.GetComponent<Renderer>().material.color = Color.white;
-            //
+            **/
         }
 
         /* Draw Gizmo
