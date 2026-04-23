@@ -257,11 +257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.94
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.z
@@ -668,48 +668,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4857711120501278333, guid: 854bca958223d7448878b18b1a78333a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1890022726}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 854bca958223d7448878b18b1a78333a, type: 3}
 --- !u!4 &1890022724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7823751387046381295, guid: 854bca958223d7448878b18b1a78333a, type: 3}
   m_PrefabInstance: {fileID: 1890022723}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1890022725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4857711120501278333, guid: 854bca958223d7448878b18b1a78333a, type: 3}
-  m_PrefabInstance: {fileID: 1890022723}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1890022726
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890022725}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1905887327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724,11 +689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 7823751387046381295, guid: 7586161f1d6df9a46814df3b80e53255, type: 3}
       propertyPath: m_LocalPosition.z
