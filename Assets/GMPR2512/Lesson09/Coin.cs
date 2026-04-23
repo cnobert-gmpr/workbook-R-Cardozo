@@ -1,0 +1,14 @@
+using UnityEngine;
+
+namespace GMPR2512.Lesson09
+{
+    public class Coin : MonoBehaviour
+    {
+        private SoundHub _soundHub;
+
+        void Awake()
+        {
+            _soundHub = GameObject.Find("SoundHub").GetComponent<SoundHub>();
+        }
+    }
+}

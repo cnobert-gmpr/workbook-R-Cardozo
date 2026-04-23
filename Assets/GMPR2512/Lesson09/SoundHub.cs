@@ -14,7 +14,7 @@ namespace GMPR2512.Lesson09
 
         public void PlayCoinSound()
         {
-            _sources[0].Play();
+            _sources[0]?.Play();
         }
     }
 }
