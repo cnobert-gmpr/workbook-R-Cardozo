@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7823751387046381295}
   - component: {fileID: 2905843399141824565}
   - component: {fileID: 8172949284144635152}
+  - component: {fileID: 2632105326905386597}
   m_Layer: 6
   m_Name: FallingPlatform
   m_TagString: Untagged
@@ -152,3 +153,30 @@ PolygonCollider2D:
       - {x: 1.46875, y: -0.5449219}
       - {x: 1.46875, y: 0.56640625}
   m_UseDelaunayMesh: 1
+--- !u!50 &2632105326905386597
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4857711120501278333}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
