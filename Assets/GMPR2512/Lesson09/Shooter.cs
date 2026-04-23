@@ -26,15 +26,18 @@ namespace GMPR2512.Lesson09
         void Update()
         {
             #region rotation
+            /**
             float rotationInput = 0;
 
             if(Input.GetKey(KeyCode.Comma))
-                rotationInput = 125;
+                rotationInput = 300;
             else if(Input.GetKey(KeyCode.Period))
-                rotationInput = -125;
+                rotationInput = -300;
             
             rotationInput *= Time.deltaTime;
-            transform.parent.Rotate(new Vector3(0, 0, rotationInput));
+            **/
+
+            transform.parent.Rotate(new Vector3(0, 0, 100 * Time.deltaTime));
             #endregion
 
             int layerMask = LayerMask.GetMask("Ground", "Enemy");
